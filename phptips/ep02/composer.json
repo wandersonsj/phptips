@@ -1,0 +1,32 @@
+{
+    "name":"robsonvleite/phptips001",
+    "description":"Conhecendo o composer",
+    "minimum-stability":"stable",
+    "license":"proprietary",
+    "authors":[
+        {
+            "name":"wanderson da silva jorge",
+            "email":"wandersonjorge100@hotmail.com",
+            "homepage":"https://www.santacasacachoeiro.org.br",
+            "role":"Developer"            
+        }
+
+    ],           
+    
+    "config":{
+        "vendor-dir":"vendor"
+    },
+    "autoload":{
+        "psr-4":{
+            "Source\\":"source/"
+        },
+        "files":  ["source/Config.php"]      
+       
+    },
+     
+    "require":{
+        "phpmailer/phpmailer": "6.0.*",
+        "coffeecode/datalayer": "1.1.*"
+    }
+
+}
